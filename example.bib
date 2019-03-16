@@ -1,0 +1,78 @@
+@STRING{jul = "July"}
+@STRING{mar = "March"}
+@STRING{jan = "January"}
+
+@PREAMBLE{ "\newcommand{\noopsort}[1]{} "
+        # "\newcommand{\printfirst}[2]{#1} "
+        # "\newcommand{\singleletter}[1]{#1} "
+        # "\newcommand{\switchargs}[2]{#2#1} " }
+
+@ARTICLE{article-minimal,
+   author = "L[eslie] A. Aamport and Abc | Xyz",
+   title = "The Gnats and Gnus Document Preparation System",
+   journal = "G-Animal's Journal",
+   year = 1986,
+}
+
+@ARTICLE{article-full,
+   author = "L[eslie] A. Aamport",
+   title = "The Gnats and Gnus Document Preparation System",
+   journal = "G-Animal's Journal",
+   year = 1986,
+   volume = 41,
+   number = 7,
+   pages = "73+",
+   month = jul,
+   note = "This is a full ARTICLE entry",
+}
+
+@ARTICLE{article-crossref,
+   crossref = "WHOLE-JOURNAL",
+   key = "",
+   author = "L[eslie] A. Aamport",
+   title = "The Gnats and Gnus Document Preparation System",
+   pages = "73+",
+   note = "This is a cross-referencing ARTICLE entry",
+}
+
+
+@ARTICLE{whole-journal,
+   key = "GAJ",
+   journal = "\mbox{G-Animal's} Journal",
+   year = 1986,
+   volume = 41,
+   number = 7,
+   month = jul,
+   note = "The entire issue is devoted to gnats and gnus
+                (this entry is a cross-referenced ARTICLE (journal))",
+}
+
+@BOOK{book-minimal,
+   author = "Donald E. Knuth",
+   title = "Seminumerical Algorithms",
+   publisher = "Addison-Wesley",
+   year = "{\noopsort{1973c}}1981",
+}
+
+@BOOK{book-full,
+   author = "Donald E. Knuth",
+   title = "Seminumerical Algorithms",
+   volume = 2,
+   series = "The Art of Computer Programming",
+   publisher = "Addison-Wesley",
+   address = "Reading Massachusetts",
+   edition = "Second",
+   month = "10~" # jan,
+   year = "{\noopsort{1973c}}1981",
+   note = "This is a full BOOK entry",
+}
+
+@BOOKLET{booklet-full,
+   author = "Jill C. Knvth",
+   title = "The Programming of Computer Art",
+   howpublished = "Vernier Art Center",
+   address = "Stanford | California",
+   month = feb,
+   year = 1988,
+   note = "This is a full BOOKLET entry",
+}
